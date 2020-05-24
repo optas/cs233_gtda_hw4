@@ -1,0 +1,25 @@
+# Compiled python modules.
+*.py[cod]
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# Pycharm
+.idea/*
+
+# Misc.
+*.so
+*.o
+*.swp
+*.pdf
+*.DS_Store
+
+cs233_gtda_hw4/.ipynb_checkpoints/*
+cs233_gtda_hw4/data/out/*
+cs233_gtda_hw4/data/images/*.png

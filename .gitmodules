@@ -1,0 +1,3 @@
+[submodule "cs233_gtda_hw4/losses/ChamferDistancePytorch"]
+	path = cs233_gtda_hw4/losses/ChamferDistancePytorch
+	url = https://github.com/ThibaultGROUEIX/ChamferDistancePytorch

@@ -1,0 +1,2 @@
+from .pointcloud_autoencoder import PointcloudAutoencoder
+from .part_aware_pointcloud_autoencoder import PartAwarePointcloudAutoencoder
