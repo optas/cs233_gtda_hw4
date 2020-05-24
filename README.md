@@ -4,9 +4,9 @@ The code has been tested with Python 3.6 (any 3x version should work).
 
 ## STANDALONE Installation Instructions:
 
-Assuming you have already a copy of cs233_gtda_hw4 in your hard drive and you are inside a virtual environemnt (e.g. Conda):
+Assuming you have already a copy of cs233_gtda_hw4 folder in your hard drive and you are inside a virtual environment (e.g. conda):
 
-1. pip install -e _top-directory-path of cs233_gtda_hw4 folder_  # this will install cs233_gtda_hw4 as a python-package with all its default dependencies
+1. pip install -e _top-directory-path-of-cs233_gtda_hw4 folder_  # this will install cs233_gtda_hw4 as a python-package with all its default dependencies
 2. git submodule update --init --recursive  # this will clone the JIT (fast) Chamfer implementation in cs233_gtda_hw4
 3. Start your work at notebooks/main.ipynb  (or notebooks_as_python_scripts/main.py if you are not a fan of notebooks).
 
@@ -15,7 +15,9 @@ Assuming you have already a copy of cs233_gtda_hw4 in your hard drive and you ar
 if you clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
     do it in a way that will also bring in directly the Chamfer dependency (submodule) i.e.,:
         ```
-        git clone --recursive https://github.com/optas/cs233_gtda_hw4.git
+        1. git clone --recursive https://github.com/optas/cs233_gtda_hw4.git
+        2. cd cs233_gtda_hw4
+        3. pip install -e .  # to install the package as a environment-wide module
         ```
     then go to step3 as above
 
