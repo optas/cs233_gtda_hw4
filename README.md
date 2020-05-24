@@ -1,4 +1,5 @@
-STANDALONE Installation Instructions:
+
+## STANDALONE Installation Instructions:
 
 Assuming you have a copy of cs233_gtda_hw4 in your hard drive and you are inside a virtual environemnt (e.g. Conda):
 
@@ -7,11 +8,12 @@ Assuming you have a copy of cs233_gtda_hw4 in your hard drive and you are inside
 3. Start your work at notebooks/main.ipynb  (or notebooks_as_python_scripts/main.py if you are not a fan of notebooks).
 
 ------
-Alternatively, if you clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
+## Alternatively, 
+if you clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
     do it in a way that will also bring in directly the Chamfer dependency (submodule) i.e.,:
-    
+        ```
         git clone --recursive https://github.com/optas/cs233_gtda_hw4.git
- 
+        ```
     then go to step3 as above
 
 ------
