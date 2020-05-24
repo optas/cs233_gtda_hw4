@@ -1,10 +1,10 @@
 ## Requirements
 Please look at setup.py 
-The code has been tested with Python 3.6 (any 3x version should work).
+The code has been tested with Python 3.6 (any 3x version should work) and pytorch 1.3 (any 1.1+ version should work).
 
 ## STANDALONE Installation Instructions:
 
-Assuming you have already a copy of cs233_gtda_hw4 folder in your hard drive and you are inside a virtual environment (e.g. conda):
+Assuming you have already a copy of cs233_gtda_hw4 folder in your hard drive and you are inside that folder with your virtual environment (e.g. conda) active:
 
 1. pip install -e _top-directory-path-of-cs233_gtda_hw4 folder_  # this will install cs233_gtda_hw4 as a python-package with all its default dependencies
 2. git submodule update --init --recursive  # this will clone the JIT (fast) Chamfer implementation in cs233_gtda_hw4
