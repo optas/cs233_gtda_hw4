@@ -11,6 +11,6 @@ setup(name='cs233_gtda_hw4',
                         'numpy',
                         'scikit-learn',
                         'matplotlib',
-                        'tqdm'],
+                        'tqdm', 'jupyter'],
       packages=['cs233_gtda_hw4'],
       zip_safe=False)

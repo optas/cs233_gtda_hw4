@@ -12,14 +12,17 @@ Assuming you have already a copy of cs233_gtda_hw4 folder in your hard drive and
 
 ------
 ## Alternatively, 
-if you clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
-    do it in a way that will also bring in directly the Chamfer dependency (submodule) i.e.,:
-        ```
-        1. git clone --recursive https://github.com/optas/cs233_gtda_hw4.git
-        2. cd cs233_gtda_hw4
-        3. pip install -e .  # to install the package as a environment-wide module
-        ```
-    then go to step3 as above
+Clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
+            
+    1. git clone https://github.com/optas/cs233_gtda_hw4.git
+    
+    2. cd cs233_gtda_hw4
+    
+    3. git submodule add https://github.com/ThibaultGROUEIX/ChamferDistancePytorch cs233_gtda_hw4/losses/ChamferDistancePytorch
+        
+    4. pip install -e .  # to install the package as a environment-wide module
+    
+    5. Go to main.ipynb or main.py                
 
 ------
 
