@@ -11,7 +11,7 @@ Assuming you have already a copy of cs233_gtda_hw4 folder in your hard drive and
 3. Start your work at notebooks/main.ipynb  (or notebooks_as_python_scripts/main.py if you are not a fan of notebooks).
 
 ------
-## Alternatively, 
+## Alternatively, inside your active (conda?) environment
 Clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
             
     1. git clone https://github.com/optas/cs233_gtda_hw4.git
@@ -39,7 +39,14 @@ If you cannot do it, you might have to resort to the ~10x slower provided implem
 (see notes inside the models/pointcloud_autoencoder.py).
 
 -----
+### (optional) instructions for making a conda environment for this HW.
+1. Install anaconda: https://docs.anaconda.com/anaconda/install/
+ 
+2. Create an enviroment: conda create -n name_you_like python=3.6 cudatoolkit=10.0
 
+3. conda activate name_you_like
+
+-----
 Best of luck!
 The CS233 Instructor/TAs
 
