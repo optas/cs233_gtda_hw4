@@ -2,17 +2,9 @@
 Please look at setup.py 
 The code has been tested with Python 3.6 (any 3x version should work).
 
-## STANDALONE Installation Instructions:
+## Installation Instructions:
 
-Assuming you have already a copy of cs233_gtda_hw4 folder in your hard drive and you are inside a virtual environment (e.g. conda):
-
-1. pip install -e _top-directory-path-of-cs233_gtda_hw4 folder_  # this will install cs233_gtda_hw4 as a python-package with all its default dependencies
-2. git submodule update --init --recursive  # this will clone the JIT (fast) Chamfer implementation in cs233_gtda_hw4
-3. Start your work at notebooks/main.ipynb  (or notebooks_as_python_scripts/main.py if you are not a fan of notebooks).
-
-------
-## Alternatively, inside your active (conda?) environment
-Clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
+#### If you have already an activated virtual-environment:
             
     1. git clone https://github.com/optas/cs233_gtda_hw4.git
     
@@ -25,7 +17,20 @@ Clone the repo from github (https://github.com/optas/cs233_gtda_hw4)
     5. Go to main.ipynb or main.py                
 
 ------
+#### If not, please first make such an environment (see instructions below for Conda) 
 
+1. Install anaconda: https://docs.anaconda.com/anaconda/install/
+ 
+2. Create an enviroment: conda create -n name_you_like **python=3.6 cudatoolkit=10.1**
+
+3. conda activate name_you_like
+
+4. conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+
+(step 4 is optional, but should be done to further increase the chances that you 
+get pytorch that sees the GPUs of your system)
+
+------
 Potential Hiccup:
 
 The fast(er) implementation of Chamfer (the one from the submodule above) requires the ninja build system installed.
@@ -37,14 +42,6 @@ If you do not have it you can install it like this:
 
 If you cannot do it, you might have to resort to the ~10x slower provided implementation of Chamfer in losses/nn_distance/chamfer_loss
 (see notes inside the models/pointcloud_autoencoder.py).
-
------
-### (optional) instructions for making a conda environment for this HW.
-1. Install anaconda: https://docs.anaconda.com/anaconda/install/
- 
-2. Create an enviroment: conda create -n name_you_like python=3.6 cudatoolkit=10.0
-
-3. conda activate name_you_like
 
 -----
 Best of luck!
